@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    width: 350px;
+    margin: 150px auto;
+    position: relative;
+    background-color: white;
+    border-radius: 4%;
+}
+
+.container::after {
+    content: url('images/bg-pattern-bottom.svg');
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+.container::before {
+    content: url('images/bg-pattern-top.svg');
+    position: absolute;
+    right: 250px;
+    bottom: 100px;
+}
+
+.container .background-image {
+    width: 100%;
+    border-radius: 4% 4% 0 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    width: 120px;
+    height: 120px;
+    margin: -60px auto 0;
+    border: 5px solid white;
+    border-radius: 50%
+}
+
+.content h2 {
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.content h2::after {
+    content: "26";
+    position: absolute;
+    color: gray;
+    right: 75px;
+    top: 4px;
+    font-size: 18px
+}
+
+.content span {
+    text-align: center;
+    color: gray;
+    margin: 0 0 25px;
+}
+
+hr {
+    color: rgba(128, 128, 128, 0.103);
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.numbers ul li {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.numbers .number {
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 700;
+    font-size: 22px
+}
